@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolorofthegame"
+    tools:context=".GameSpace">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/count"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/secondPlayerName"
+        app:layout_constraintStart_toEndOf="@+id/firstPlayerName"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/firstPlayerCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="0"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/secondPlayerCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="0"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/space_for_game"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_0"
+                android:layout_width="84dp"
+                android:layout_height="89dp"
+                android:background="@drawable/xplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="0sp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="50dp"/>
+
+
+            <Button
+                android:id="@+id/button_1"
+                android:layout_width="84dp"
+                android:layout_height="89dp"
+                android:background="@drawable/xplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="0sp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="2dp"/>
+
+            <Button
+                android:id="@+id/button_2"
+                android:layout_width="84dp"
+                android:layout_height="89dp"
+                android:background="@drawable/xplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="0sp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="89dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_3"
+                android:layout_width="84dp"
+                android:layout_height="89dp"
+                android:background="@drawable/xplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="0sp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="50dp"/>
+
+
+            <Button
+                android:id="@+id/button_4"
+                android:layout_width="84dp"
+                android:layout_height="89dp"
+                android:background="@drawable/xplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="0sp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="2dp"/>
+
+            <Button
+                android:id="@+id/button_5"
+                android:layout_width="84dp"
+                android:layout_height="89dp"
+                android:background="@drawable/oplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="0sp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="170dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_6"
+                android:layout_width="84dp"
+                android:layout_height="89dp"
+                android:background="@drawable/xplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="0sp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="50dp"/>
+
+
+            <Button
+                android:id="@+id/button_7"
+                android:layout_width="84dp"
+                android:layout_height="89dp"
+                android:background="@drawable/oplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="0sp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="2dp"/>
+
+            <Button
+                android:id="@+id/button_8"
+                android:layout_width="84dp"
+                android:layout_height="89dp"
+                android:background="@drawable/xplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="20dp"
+                android:textSize="0sp"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings"
+        android:background="@color/backgroundcolorofthegame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/firstPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Ivan"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/secondPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Sonia"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
